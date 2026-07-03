@@ -657,17 +657,17 @@ section.app-section.active {
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
   .hero-content p {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
   .hero-buttons {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .hero-quick-stats {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .hero-image-wrapper {
     margin-top: 40px;
@@ -684,15 +684,18 @@ section.app-section.active {
   .hero-content h1 {
     font-size: 32px;
     margin-bottom: 16px;
+    text-align: left;
   }
   .hero-content p {
     font-size: 15px;
     margin-bottom: 24px;
+    text-align: left;
   }
   .hero-buttons {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    align-items: stretch;
   }
   .hero-buttons .btn {
     width: 100%;
@@ -701,9 +704,11 @@ section.app-section.active {
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 24px;
+    justify-content: flex-start;
   }
   .stat-item {
     flex: 1 1 90px;
+    text-align: left;
   }
   .stat-item h3 {
     font-size: 26px;
