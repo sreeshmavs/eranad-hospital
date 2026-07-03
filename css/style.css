@@ -674,6 +674,58 @@ section.app-section.active {
   }
 }
 
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+  .hero {
+    padding: 40px 0 30px 0;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .hero-content p {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  .hero-quick-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 24px;
+  }
+  .stat-item {
+    flex: 1 1 90px;
+  }
+  .stat-item h3 {
+    font-size: 26px;
+  }
+  .floating-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+  .logo-text span {
+    font-size: 11px;
+  }
+  .logo svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 /* --- Emergency Hotline Section --- */
 .emergency-strip {
   background-color: var(--color-danger-light);
