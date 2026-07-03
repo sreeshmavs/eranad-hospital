@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eranad Hospital & Research Centre is a premier multi-speciality hospital in Edakkara, Nilambur, Kerala. Serving you with 24/7 emergency medical care, advanced diagnostic scanning, and experienced doctors.">
+  <title>Eranad Hospital & Research Centre | Edakkara, Malappuram</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- --- Glassmorphic Navigation Bar --- -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" id="nav-logo">
+        <!-- Pulse Cross SVG Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" opacity="0.3"/>
+        </svg>
+        <div class="logo-text">
+          ERANAD HOSPITAL
+          <span>RESEARCH & CARE</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links" id="navbar-links">
+        <a href="#home" class="active" id="nav-home">Home</a>
+        <a href="#specialities" id="nav-specialities">Specialities</a>
+        <a href="#doctors" id="nav-doctors">Find a Doctor</a>
+        <a href="#facilities" id="nav-facilities">Diagnostics</a>
+        <a href="#booking" id="nav-booking">Book Appointment</a>
+        <a href="#contact" id="nav-contact">Contact Us</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Switcher Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme" id="theme-toggle-btn">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <div class="burger-menu" id="burger-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Main SPA sections container --- -->
+  <main>
+    
+    <!-- === HOME SECTION === -->
+    <section id="home" class="app-section active">
+      <div class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-tagline">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>Edakkara, Malappuram, Kerala</span>
+            </div>
+            <h1>Providing <span>Round-the-Clock</span> Compassionate Medical Care</h1>
+            <p>Eranad Hospital & Research Centre is a premier multi-speciality healthcare facility committed to serving Nilambur and nearby regions with 24/7 emergency response, expert doctors, and advanced diagnostic diagnostics.</p>
+            <div class="hero-buttons">
+              <a href="#booking" class="btn btn-primary" id="hero-btn-book">
+                <i data-lucide="calendar"></i> Book Appointment
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                Contact Us
+              </a>
+            </div>
+            
+            <div class="hero-quick-stats">
+              <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Emergency Hours</p>
+              </div>
+              <div class="stat-item">
+                <h3>10+</h3>
+                <p>Specialities</p>
+              </div>
+              <div class="stat-item">
+                <h3>Daily</h3>
+                <p>Ultrasound Scanning</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <img src="images/hero_lobby.png" alt="Eranad Hospital Lobby Entrance">
+              <!-- Glassmorphism Floating Badge 1 -->
+              <div class="floating-badge floating-badge-1">
+                <div class="badge-icon">
+                  <i data-lucide="shield-check"></i>
+                </div>
+                <div class="badge-text">
+                  <p>Certified Care</p>
+                  <h4>Multi-Speciality</h4>
+                </div>
+              </div>
+              <!-- Glassmorphism Floating Badge 2 -->
+              <div class="floating-badge floating-badge-2">
+                <div class="badge-icon">
+                  <i data-lucide="accessibility"></i>
+                </div>
+                <div class="badge-text">
+                  <p>Accessibility</p>
+                  <h4>Wheelchair Friendly</h4>
+                </div>
+              </div>
+            </div>
+            <div class="hero-bg-accent"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Emergency Contact Hotline Bar -->
+      <div class="emergency-strip">
+        <div class="container emergency-flex">
+          <div class="emergency-info">
+            <div class="emergency-icon-glow">
+              <i data-lucide="phone-call"></i>
+            </div>
+            <div class="emergency-details">
+              <h4>EMERGENCY & TRAUMA CARE</h4>
+              <p>Critical response support is open 24 hours (Monday–Sunday)</p>
+            </div>
+          </div>
+          <div class="emergency-phones">
+            <a href="tel:+914931274500" class="phone-link"><i data-lucide="phone"></i> +91 4931 274 500</a>
+            <a href="tel:+917034010440" class="phone-link"><i data-lucide="phone"></i> +91 7034 010 440</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- General Welcome Feature Brief Cards -->
+      <div class="section-padding home-intro">
+        <div class="container">
+          <div class="section-header">
+            <h2>Welcome to <span>Eranad Hospital</span></h2>
+            <p>We combine modern medical technology with compassionate attention to deliver optimal clinical outcomes.</p>
+          </div>
+          
+          <div class="grid-3">
+            <div class="intro-card">
+              <div class="intro-icon"><i data-lucide="stethoscope"></i></div>
+              <h3>Specialised Medical Team</h3>
+              <p>Our clinics feature experienced consultants in Pediatrics, Cardiology, General Medicine, and Emergency Trauma Care.</p>
+              <a href="#specialities" class="intro-link">Explore Departments <i data-lucide="arrow-right"></i></a>
+            </div>
+            
+            <div class="intro-card">
+              <div class="intro-icon"><i data-lucide="microscope"></i></div>
+              <h3>Advanced Diagnostics</h3>
+              <p>Equipped with a daily diagnostic unit offering high-resolution ultrasound scans and rapid medical laboratory reports.</p>
+              <a href="#facilities" class="intro-link">View Scanner Info <i data-lucide="arrow-right"></i></a>
+            </div>
+            
+            <div class="intro-card">
+              <div class="intro-icon"><i data-lucide="parking-square"></i></div>
+              <h3>Inclusive Access Design</h3>
+              <p>Wheelchair-accessible parking, main entrances, and smooth interior walkways designed to support patients with limited mobility.</p>
+              <a href="#facilities" class="intro-link">Read Accessibility Info <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- === SPECIALITIES SECTION === -->
+    <section id="specialities" class="app-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Clinical <span>Specialities & Services</span></h2>
+          <p>Eranad Hospital provides targeted therapies across dedicated departments supervised by medical professionals.</p>
+        </div>
+        
+        <!-- Primary Speciality Showcase (Dynamic Grid) -->
+        <div class="grid-2 speciality-featured-grid" id="primary-specialities-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+        
+        <!-- Secondary Specialities Section -->
+        <div class="secondary-specialities-wrap">
+          <div class="secondary-header">
+            <h3>Other Specialised Departments</h3>
+            <p style="color:var(--text-secondary); font-size:14px; margin-top:4px;">We provide outpatient & inpatient consultations across a wide spectrum of health disciplines.</p>
+          </div>
+          <div class="secondary-grid" id="secondary-specialities-grid">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- === DOCTORS SECTION === -->
+    <section id="doctors" class="app-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet Our <span>Medical Specialists</span></h2>
+          <p>Consult with our panel of board-certified clinical doctors and senior medical officers.</p>
+        </div>
+        
+        <!-- Search and Filters Panel -->
+        <div class="doctors-control-panel">
+          <div class="search-bar">
+            <i data-lucide="search"></i>
+            <input type="text" id="doctor-search" placeholder="Search doctors by name, degree, or specialty...">
+          </div>
+          <div class="filter-dropdowns">
+            <select id="doctor-dept-filter" aria-label="Filter by Department">
+              <option value="all">All Departments</option>
+              <!-- Populated dynamically via JS -->
+            </select>
+          </div>
+        </div>
+        
+        <!-- Doctors Cards Grid -->
+        <div class="grid-3 doctors-grid-container" id="doctors-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- === DIAGNOSTIC & ACCESSIBILITY SECTION === -->
+    <section id="facilities" class="app-section section-padding facilities-tour">
+      <div class="container">
+        <div class="section-header">
+          <h2>Diagnostics & <span>Accessibility Facilities</span></h2>
+          <p>Learn more about our advanced diagnostic scanners and physical infrastructure designed for patient safety and convenience.</p>
+        </div>
+        
+        <!-- Showcases (Scan & Accessibility) -->
+        <div id="facilities-list">
+          <!-- Populated dynamically via JS -->
+        </div>
+        
+        <!-- Accessibility Feature Grid Tiles -->
+        <div class="grid-3 accessibility-grid">
+          <div class="accessibility-tile">
+            <div class="accessibility-tile-icon"><i data-lucide="door-closed"></i></div>
+            <h4>Entrance & Exit Ramps</h4>
+            <p>Step-free entrance and exit structures fitted with secure handrails to ensure safe transitions for patients using wheelchairs or walkers.</p>
+          </div>
+          <div class="accessibility-tile">
+            <div class="accessibility-tile-icon"><i data-lucide="parking-circle"></i></div>
+            <h4>Designated Parking</h4>
+            <p>Clearly demarcated, extra-wide parking slots situated close to the main lobby entrance to ease entry for wheelchair transfers.</p>
+          </div>
+          <div class="accessibility-tile">
+            <div class="accessibility-tile-icon"><i data-lucide="credit-card"></i></div>
+            <h4>Digital & NFC Payments</h4>
+            <p>Hassle-free settlement support. We accept all major Credit/Debit Cards, Google Pay, UPI, and NFC mobile touch payments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- === BOOKING ENGINE SECTION === -->
+    <section id="booking" class="app-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Schedule an <span>Appointment</span></h2>
+          <p>Avoid waiting lines. Use our interactive wizard booking engine to secure your consultation spot in minutes.</p>
+        </div>
+        
+        <div class="booking-grid">
+          
+          <!-- Wizard Card Form -->
+          <div class="booking-wizard-card">
+            <!-- Step Indicators -->
+            <div class="wizard-steps">
+              <div class="step-indicator active" id="step-ind-1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Physician</span>
+              </div>
+              <div class="step-indicator" id="step-ind-2">
+                <div class="step-circle">2</div>
+                <span class="step-label">Time Slot</span>
+              </div>
+              <div class="step-indicator" id="step-ind-3">
+                <div class="step-circle">3</div>
+                <span class="step-label">Patient Info</span>
+              </div>
+            </div>
+            
+            <!-- Booking Form Container -->
+            <form id="booking-form" novalidate>
+              
+              <!-- STEP 1: Department & Doctor selection -->
+              <div class="booking-form-step active" id="booking-step-1">
+                <div class="form-group">
+                  <label for="booking-dept">Medical Department *</label>
+                  <div class="form-input-wrap">
+                    <i data-lucide="heart-pulse"></i>
+                    <select id="booking-dept" required>
+                      <option value="" disabled selected>Select Department</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="booking-doc">Specialist Doctor *</label>
+                  <div class="form-input-wrap">
+                    <i data-lucide="user"></i>
+                    <select id="booking-doc" disabled required>
+                      <option value="" disabled selected>Select Doctor (Choose department first)</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="booking-date">Preferred Date *</label>
+                  <div class="form-input-wrap">
+                    <i data-lucide="calendar"></i>
+                    <input type="date" id="booking-date" required>
+                  </div>
+                </div>
+                
+                <div class="wizard-actions">
+                  <div></div>
+                  <button type="button" class="btn btn-primary" id="btn-next-1">Next Step <i data-lucide="chevron-right"></i></button>
+                </div>
+              </div>
+              
+              <!-- STEP 2: Time slot selection -->
+              <div class="booking-form-step" id="booking-step-2">
+                <div class="form-group">
+                  <label style="margin-bottom: 12px;">Available Consultation Hours *</label>
+                  <div class="time-slots-container" id="time-slots">
+                    <p style="color: var(--text-muted); font-size: 14px;">Select a doctor and date to load available time slots.</p>
+                  </div>
+                </div>
+                
+                <div class="wizard-actions">
+                  <button type="button" class="btn btn-secondary" id="btn-prev-2"><i data-lucide="chevron-left"></i> Previous</button>
+                  <button type="button" class="btn btn-primary" id="btn-next-2">Next Step <i data-lucide="chevron-right"></i></button>
+                </div>
+              </div>
+              
+              <!-- STEP 3: Personal details -->
+              <div class="booking-form-step" id="booking-step-3">
+                <div class="form-group-grid">
+                  <div class="form-group">
+                    <label for="patient-name">Patient Full Name *</label>
+                    <div class="form-input-wrap">
+                      <i data-lucide="user"></i>
+                      <input type="text" id="patient-name" placeholder="John Doe" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="patient-phone">Phone Number *</label>
+                    <div class="form-input-wrap">
+                      <i data-lucide="phone"></i>
+                      <input type="tel" id="patient-phone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="patient-email">Email Address</label>
+                    <div class="form-input-wrap">
+                      <i data-lucide="mail"></i>
+                      <input type="email" id="patient-email" placeholder="john@example.com">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group-grid" style="margin-bottom:0; gap:12px;">
+                    <div class="form-group">
+                      <label for="patient-age">Age *</label>
+                      <div class="form-input-wrap">
+                        <input type="number" id="patient-age" placeholder="Age" min="1" max="120" required style="padding-left:16px;">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="patient-gender">Gender *</label>
+                      <div class="form-input-wrap">
+                        <select id="patient-gender" required style="padding-left:16px;">
+                          <option value="" disabled selected>Select</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="patient-notes">Brief Medical Concern / Symptoms</label>
+                  <div class="form-input-wrap">
+                    <textarea id="patient-notes" rows="3" placeholder="Describe symptoms, medical history or special requests..."></textarea>
+                  </div>
+                </div>
+                
+                <div class="wizard-actions">
+                  <button type="button" class="btn btn-secondary" id="btn-prev-3"><i data-lucide="chevron-left"></i> Previous</button>
+                  <button type="submit" class="btn btn-primary" id="btn-submit-booking"><i data-lucide="check"></i> Confirm Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Bookings Tracker Sidebar -->
+          <div class="booking-sidebar">
+            <div class="sidebar-widget">
+              <h3>Upcoming Appointments</h3>
+              <div class="appointments-list" id="my-appointments-list">
+                <!-- Bookings from Local Storage dynamically rendered here -->
+              </div>
+            </div>
+            
+            <div class="sidebar-widget" style="background: linear-gradient(135deg, var(--color-primary-light), transparent); border-color: var(--color-primary-light);">
+              <h4 style="color: var(--color-primary); font-size:16px; margin-bottom:10px; font-weight:700;">Need Immediate Help?</h4>
+              <p style="font-size:13px; color: var(--text-secondary); margin-bottom:14px; line-height:1.5;">For immediate trauma consultation or ambulance dispatch services, click the link to reach our front office desk.</p>
+              <a href="tel:+918111888721" class="btn btn-danger" style="width:100%; font-size:14px;"><i data-lucide="phone-forwarded"></i> +91 81118 88721</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- === CONTACT SECTION === -->
+    <section id="contact" class="app-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in <span>Touch with Us</span></h2>
+          <p>We are conveniently situated along the main Ooty Road in Edakkara. Drop by or contact us using our contact links.</p>
+        </div>
+        
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-info-card">
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i data-lucide="map-pin"></i></div>
+                <div class="contact-info-text">
+                  <h4>Our Location</h4>
+                  <p>Ooty Road, Edakkara Post, Nilambur, Malappuram district, Kerala - 679331</p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+                <div class="contact-info-text">
+                  <h4>Booking & Enquiry</h4>
+                  <p>+91 4931 274 500<br>+91 7034 010 440</p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i data-lucide="ambulance"></i></div>
+                <div class="contact-info-text">
+                  <h4>Trauma hotline (24/7)</h4>
+                  <p>+91 81118 88721</p>
+                </div>
+              </div>
+              
+            </div>
+            
+            <!-- Custom Vector SVG Map of Edakkara / Ooty Road -->
+            <div class="map-container">
+              <svg class="custom-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+                <defs>
+                  <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#94a3b8" />
+                    <stop offset="100%" stop-color="#64748b" />
+                  </linearGradient>
+                </defs>
+                <!-- Map Background Grid -->
+                <rect width="100%" height="100%" fill="var(--bg-tertiary)"/>
+                <circle cx="200" cy="125" r="100" fill="var(--bg-secondary)" opacity="0.4" />
+                
+                <!-- Stylised road paths -->
+                <!-- Ooty Road (Highway representation) -->
+                <path d="M -20,80 Q 150,110 240,150 T 420,180" fill="none" stroke="url(#roadGrad)" stroke-width="24" stroke-linecap="round"/>
+                <path d="M -20,80 Q 150,110 240,150 T 420,180" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8,6"/>
+                
+                <!-- Cross road (Edakkara Town cross road) -->
+                <path d="M 230,-10 L 250,260" fill="none" stroke="url(#roadGrad)" stroke-width="14" stroke-linecap="round"/>
+                
+                <!-- Surrounding landmarks outlines -->
+                <rect x="50" y="30" width="50" height="30" rx="4" fill="var(--border-color)" opacity="0.7"/>
+                <text x="75" y="48" fill="var(--text-muted)" font-family="sans-serif" font-size="8" text-anchor="middle">Edakkara Post</text>
+                
+                <rect x="300" y="70" width="60" height="30" rx="4" fill="var(--border-color)" opacity="0.7"/>
+                <text x="330" y="88" fill="var(--text-muted)" font-family="sans-serif" font-size="8" text-anchor="middle">Nilambur Rd</text>
+                
+                <!-- Hospital Marker & Building -->
+                <rect x="180" y="150" width="70" height="45" rx="8" fill="var(--color-primary)" stroke="var(--bg-secondary)" stroke-width="3" />
+                <path d="M 215,160 V 172 M 209,166 H 221" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <text x="215" y="190" fill="white" font-family="var(--font-headings)" font-size="7" font-weight="bold" text-anchor="middle">ERANAD HOSPITAL</text>
+                
+                <!-- Pointer Marker -->
+                <g class="map-location-marker" transform="translate(215, 140)">
+                  <path d="M 0,0 C -6,-10 -10,-14 -10,-20 C -10,-26 -5,-30 0,-30 C 5,-30 10,-26 10,-20 C 10,-14 6,-10 0,0 Z" fill="var(--color-danger)" stroke="white" stroke-width="2"/>
+                  <circle cx="0" cy="-20" r="4" fill="white" />
+                </g>
+                
+                <text x="100" y="125" fill="var(--text-secondary)" font-family="var(--font-headings)" font-size="10" font-weight="bold" transform="rotate(10, 100, 125)">OOTY ROAD</text>
+              </svg>
+              <a href="https://maps.google.com/?q=Eranad+Hospital+Edakkara+Ooty+Road" target="_blank" rel="noopener" class="btn btn-secondary btn-icon map-overlay-btn" title="Open Google Maps">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Contact Enquiry Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="enquiry-form">
+              <div class="form-group">
+                <label for="enquiry-name">Your Full Name *</label>
+                <div class="form-input-wrap">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="enquiry-name" placeholder="John Doe" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="enquiry-phone">Phone Number *</label>
+                <div class="form-input-wrap">
+                  <i data-lucide="phone"></i>
+                  <input type="tel" id="enquiry-phone" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="enquiry-msg">Message / General Inquiry *</label>
+                <div class="form-input-wrap">
+                  <textarea id="enquiry-msg" rows="4" placeholder="Enter details regarding bookings, specialized requirements, or clinic feedback..." required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;"><i data-lucide="send"></i> Send Enquiry</button>
+            </form>
+          </div>
+          
+        </div>
+        
+        <!-- FAQs Section -->
+        <div class="faq-wrap">
+          <div class="faq-header">
+            <h3>Frequently Asked Questions</h3>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What are the emergency hours at Eranad Hospital?</span>
+                <i class="faq-toggle-icon" data-lucide="chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                Our emergency and trauma services run 24 hours a day, 7 days a week (Monday–Sunday) to ensure patients get critical attention immediately.
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Which pediatricians and cardiologists consult here?</span>
+                <i class="faq-toggle-icon" data-lucide="chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                Our child care unit is headed by Dr. Shaheer M (MBBS, DNB-Pediatrics) and our heart department is led by Dr. Anwar K (MBBS, MD, DNB, DrNB Cardiology).
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do you have facilities for ultrasound scanning daily?</span>
+                <i class="faq-toggle-icon" data-lucide="chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                Yes, we offer advanced diagnostic ultrasound scanning services daily, supporting cardiology, maternal, and pediatric imaging.
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Is the hospital wheelchair accessible?</span>
+                <i class="faq-toggle-icon" data-lucide="chevron-down"></i>
+              </div>
+              <div class="faq-answer">
+                Absolutely. We have step-free main entrance and exit access, wheelchair-friendly parking slots, and support digital contactless card payments.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- --- Footer Section --- -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19 10.5h-5.5V5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5H5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h5.5V19c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-5.5H19c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z"/>
+            </svg>
+            <div class="footer-logo-text">
+              ERANAD HOSPITAL
+              <span>RESEARCH & CENTRE</span>
+            </div>
+          </a>
+          <p class="footer-desc">Providing high-quality multi-speciality medical service, state-of-the-art diagnostic screening, and around-the-clock emergency support to patients in Kerala.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home Page</a>
+            <a href="#specialities">Clinical specialities</a>
+            <a href="#doctors">Consultants panel</a>
+            <a href="#facilities">Facilities tour</a>
+            <a href="#booking">Book Appointment</a>
+            <a href="#contact">Contact info</a>
+          </div>
+        </div>
+        
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Reach Us</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-line">
+              <i data-lucide="map-pin"></i>
+              <span>Ooty Road, Edakkara Post,<br>Nilambur, Malappuram,<br>Kerala - 679331</span>
+            </div>
+            <div class="footer-contact-line">
+              <i data-lucide="phone"></i>
+              <span>+91 4931 274 500<br>+91 7034 010 440</span>
+            </div>
+            <div class="footer-contact-line">
+              <i data-lucide="ambulance"></i>
+              <span>Emergency (24/7):<br>+91 81118 88721</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Eranad Hospital & Research Centre. All Rights Reserved.</p>
+        <p>Managed with digital health solutions | Accessibility friendly</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Toast Notification System container --- -->
+  <div id="toast-container"></div>
+
+  <!-- --- JavaScript Imports --- -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/booking.js"></script>
+  
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
