@@ -671,6 +671,11 @@ section.app-section.active {
   }
   .hero-image-wrapper {
     margin-top: 40px;
+    display: block;
+    width: 100%;
+  }
+  .hero-image-container {
+    max-width: 100%;
   }
 }
 
@@ -715,6 +720,23 @@ section.app-section.active {
   }
   .floating-badge {
     display: none;
+  }
+  .hero-image-wrapper {
+    display: block;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .hero-image-container {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+  }
+  .hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 
